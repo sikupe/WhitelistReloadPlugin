@@ -10,6 +10,10 @@ import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * PathWatcher is watching a given path for changes. It does not do a recursive lookup!
+ * It is based on querying file metadata on a regular basis, as it is independent of inotify and always works
+ */
 public class PathWatcher {
     private final ScheduledExecutorService executorService = Executors.newScheduledThreadPool(1);
     private final Path path;
