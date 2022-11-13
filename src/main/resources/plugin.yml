@@ -1,0 +1,8 @@
+name: WhitelistAuthPlugin
+version: 1.0.0
+main: com.github.sikupe.auth.WhitelistAuthPlugin
+description: Automatically reloads whitelist on file change
+author: sikupe
+website: https://github.com/sikupe
+api-version: 1.19
+load: STARTUP
